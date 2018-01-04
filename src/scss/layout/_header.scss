@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.l-header {
+   background-color: $color_purple;
+   color: $color_white;
+   height: 848px;
+   .l-inner{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     height: 100%;
+     width: 100%;
+     padding: 0 20px;
+     .l-header__logo{
+       opacity: 0.6;
+       transition: all 1s ease;
+       margin: 48px 0;
+       &:hover{
+         opacity: 1;
+       }
+     }
+     .l-header__cont{
+       margin-top: 60px;
+     }
+    h1{
+      font-size: 3.438em;
+    }
+    h2{
+      font-size: 1.875em;
+      line-height: 1em;
+      font-weight: normal;
+     }
+     h3{
+       font-size: 1.500em;
+       line-height: 1.4em;
+       font-weight: normal;
+     }
+   }
+   .l-header__container{
+     background-color: $color_white;
+     border-radius: 5px;
+     color: $color_darkgray;
+     display: flex;
+     flex-flow: row;
+     justify-content: space-around;
+     align-items: center;
+     position: relative;
+     align-self: center;
+     margin-left: 14px;
+     bottom: -71px;
+     width: 900px;
+     box-shadow: 0 0 30px rgba(52,52,52,0.15);
+     & > div{
+       padding: 35px 0;
+       font-size: 0.875em;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 140px;
+       flex-basis: 225px;
+       flex-wrap: wrap;
+       flex-direction: column;
+       & > img{
+         padding-bottom: 5px;
+       }
+       & > p{
+         padding-top: 5px;
+       }
+     }
+
+   }
+}

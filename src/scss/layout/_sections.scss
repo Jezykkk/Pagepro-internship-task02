@@ -1,0 +1,299 @@
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+.l-section {
+    //
+}
+
+.l-scope{
+  background-image: url("../img/left-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  margin-top: 225px;
+  margin-bottom: 152px;
+  .l-inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    height: 514px;
+    & > div{
+      padding: 25px;
+      flex-basis: 570px;
+    }
+  }
+
+}
+
+
+.l-services{
+  background-color: #f7f7f7;
+  & > .l-inner{
+    text-align: center;
+    padding: 105px 0;
+}
+  .l-services__features{
+    margin-top: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    line-height: 1.8em;
+    flex-wrap: wrap;
+    & > div{
+      background-color: $color_white;
+      flex-basis: 260px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 15px;
+      padding: 35px;
+      height: 335px;
+      border-bottom: 3px solid $color_white;
+      &:hover{
+      border-bottom: 3px solid $color_orange;
+      box-shadow: 0 0 15px rgba(52,52,52,0.10);
+      }
+      & > img{
+        display: inline-block;
+        margin: 30px 0;
+        filter: grayscale(100%);
+      }
+      &:hover > img{
+        filter: grayscale(0);
+      }
+      & > h3{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.l-focus{
+  padding: 0 30px;
+
+    .l-focus__container{
+    border-bottom: 1px solid #d5d8da;
+    width: 720px;
+    position: relative;
+    &::before{
+      content:'\2022';
+      position: absolute;
+      bottom: -5px;
+      left: -5px;
+      font-size: 1.5em;
+      line-height: 10px;
+      text-align: center;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #d5d8da;
+      color: #2f3b44;
+    }
+
+    &::after{
+      content:'\2022';
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+      font-size: 1.5em;
+      line-height: 10px;
+      text-align: center;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #d5d8da;
+      color: #2f3b44;
+    }
+
+    p:first-child{
+      position: absolute;
+      left: -60px;
+      bottom: 10px;
+      width: 110px;
+      font-weight: bold;
+    }
+    p:last-child{
+      position: absolute;
+      right: -65px;
+      bottom: 10px;
+      width: 110px;
+      font-weight: bold;
+    }
+
+      }
+     .l-inner{
+      height: 603px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+       h2{
+        margin: 30px;
+      }
+      & > div{
+        flex-basis: 400px;
+        text-align: center;
+      }
+    }
+    i{
+      display: inline-block;
+      background-color: $color_orange;
+      color: $color_white;
+      height: 69px;
+      width: 69px;
+      font-size: 2.25em;
+      line-height: 69px;
+      margin: 32px;
+    }
+    .l-focus__dot{
+      position: relative;
+      bottom: -5px;
+      margin: 0 auto;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: $color_orange;
+      color: #2f3b44;
+      &::before{
+        content:'\2022';
+        font-size: 1.5em;
+        line-height: 10px;
+        text-align: center;
+        display: block;
+        width: 10px;
+        height: 10px;
+        color: $color_white;
+      }
+    }
+
+}
+.l-solutions{
+  background-image: url("../img/right-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  margin-bottom: 152px;
+  .l-inner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 514px;
+    & > div{
+      padding: 25px;
+      flex-basis: 570px;
+    }
+  }
+}
+.l-team{
+  .l-inner{
+    min-height: 815px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > div{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+   }
+   .l-team__member{
+     border: 2px solid rgba($color_black, .05);
+     flex-basis: 340px;
+     height: 442px;
+     text-align: center;
+     padding: 45px;
+     margin: 25px;
+     &:hover{
+       box-shadow: 0 0 20px rgba($color_black,.05);
+       border: 2px solid $color_white;
+     }
+     & > img{
+       height: 155px;
+       width: 155px;
+       background: rgba($color_lightgray, .3);
+     }
+
+   }
+   .l-team__member-circle{
+     display: inline-block;
+     clip-path: circle(77px at center);
+   }
+   i{
+     display: inline-block;
+     width: 39px;
+     height: 39px;
+     border: 1px solid $color_lightgray;
+     color: $color_darkgray;
+     border-radius: 50%;
+     line-height: 39px;
+     font-size: 0.875em;
+     margin: 50px 5px 0 5px;
+     text-align: center;
+     opacity: 0.6;
+     &:hover{
+       opacity: 1;
+     }
+   }
+
+}
+.l-stats{
+  background-image: url("../img/stats-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: $color_white;
+  .l-stats__container{
+    height: 463px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    & > div{
+      flex-basis: 150px;
+      text-align: center;
+      position: relative;
+     &::before{
+       content: "";
+       position: absolute;
+       left: -70px;
+       top: -60px;
+       height: 200px;
+       display: inline-block;
+       border-right: 1px solid rgba($color_lightgray, .55 );
+       transform: rotate(30deg);
+     }
+     &:first-child{
+       &::before{
+         display: none;
+       }
+     }
+    }
+  }
+}
+.l-contact{
+  background: url("../img/stay-in-touch-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  .l-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 665px;
+  }
+  .f-form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    width: 615px;
+    & > div , label, button{
+      flex: 1 100%
+    }
+  }
+}
