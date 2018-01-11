@@ -13,14 +13,15 @@
     border-radius: $size_btn;
     transition: all 1s ease;
     margin: 20px 0;
+    font-family: $font_main;
+    font-size: 1em;
+    padding-top: 2px;
     &:hover{
     background-color: $color_white;
     color: $color_orange;
-    border-radius: 0;
     }
     .c-label {
         width: 100%;
-
         text-align: center;
     }
 }

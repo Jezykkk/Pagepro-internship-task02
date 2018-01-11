@@ -15,26 +15,42 @@
      .l-header__logo{
        opacity: 0.6;
        transition: all 1s ease;
-       margin: 48px 0;
+       margin: 48px 3px;
        &:hover{
          opacity: 1;
        }
      }
      .l-header__cont{
-       margin-top: 60px;
+       margin-top: 88px;
+       button{
+         position: relative;
+         top: -15px;
+
+       }
      }
     h1{
+      position: relative;
+      top: -23px;
+      left: 2px;
       font-size: 3.438em;
-    }
+      font-family: $font_header;
+      font-weight: bold;
+      letter-spacing: -1px;
+      }
     h2{
+      position: relative;
+      top: -6px;
       font-size: 1.875em;
-      line-height: 1em;
       font-weight: normal;
+      font-family: $font_main;
      }
      h3{
+       position: relative;
+       top: -36px;
+       left: 1px;
        font-size: 1.500em;
-       line-height: 1.4em;
        font-weight: normal;
+       font-family: $font_main;
      }
    }
    .l-header__container{
@@ -51,8 +67,9 @@
      bottom: -71px;
      width: 900px;
      box-shadow: 0 0 30px rgba(52,52,52,0.15);
+     font-family: $font_main;
+     font-size: 1em;
      & > div{
-       padding: 35px 0;
        font-size: 0.875em;
        display: flex;
        justify-content: center;
@@ -65,7 +82,7 @@
          padding-bottom: 5px;
        }
        & > p{
-         padding-top: 5px;
+         padding-top: 12px;
        }
      }
 

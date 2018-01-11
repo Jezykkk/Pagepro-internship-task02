@@ -13,7 +13,7 @@ $color_orange:        #e9654c;
 $color_darkblue:      #1b2126;
 $color_darkgray:      #313131;
 $color_lightgray:     #a6a6a6;
-$color_gray:     	  #a6a6a6;
+$color_gray:     	    #a6a6a6;
 $color_1:     	$color_black;
 $color_2:     	$color_white;
 $color_3:     	$color_red;
@@ -34,7 +34,7 @@ $index_header: 100;
 $size_inner:                                                    1170px;
 $size_gutter:                                                   15px;
 
-$size_btn:                                                      48px;
+$size_btn:                                                      50px;
 
 $size_scalable-padding_16-9:                                    56%;
 $size_scalable-padding_4-3:                                     75%;
@@ -43,6 +43,8 @@ $size_scalable-padding_4-3:                                     75%;
 /* Fonts
 ========================================================================== */
 $font_default: 		Arial, sans-serif;
+$font_main:      'Roboto', sans-serif;
+$font_header:    'Montserrat', sans-serif;
 $font_ico: 			'fontello';
 
 /* Breakpoints
